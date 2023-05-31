@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS.PC</title>
+    <link rel="stylesheet" href="specification-pc.css">
+</head>
+
+<body>
+    <div class="specification-pc-page">
+        <div class="specification-pc-page-header">
+            <a class="specification-page-title" href="../../index.html">CC.PC</a> 
+            <div class="specification-pc-menu">
+                <button onclick="location.href='/Pages/7componente-pc/componente-pc.html'">COMPONENTE</button>
+                <button onclick="location.href='/Pages/2sisteme-pc/sisteme-pc.html'">SISTEME PC</button>
+                <button>DESPRE</button>
+                <button onclick="location.href='/Pages/6contact-pc/contact-pc.html'">CONTACT</button>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="/images/28png.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/images/36png.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/images/38png.png" alt="">
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <div class="nav-man">
+                <label for="radio1" class="man-btn"></label>
+                <label for="radio2" class="man-btn"></label>
+                <label for="radio3" class="man-btn"></label>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3 ){
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+        <h3>GAMING KRONOS AMD RYZEN 7 5800X, ASUS RX 6800 16GB DDR6, 32GB RAM DDR4</h3>
+        <div class="pret"><a>PRET: 9999 RON</a></div>
+            <div class="specificati-mai-mult" id="afiseaza-mai-mult">
+                <div class="descriere"><p>DESCRIERE</p></div>
+                    <p>Esti gamer impatimit? Si noi! Din acest motiv venim in intampinarea ta cu cele mai noi desktop-uri KRONOS dotate cu
+                    componente de ultima generatie, capabile sa faca fata atat exigentelor tale, cat si jocurilor din ce in ce mai
+                    infometate dupa resurse. Schimba acum vechiul calculator pe un nou desktop KRONOS si poti uita de acum incolo de setarile LOW! Treci la nivelul
+                    ULTRA!</p>
+                    <img src="/images/39.jpg" alt="">
+                <div class="specificati"><p>SPECIFICATII</p></div> 
+                <table id="model-pc">
+                    <tr>
+                        <td>Procesor </td>
+                        <td>AMD Ryzen 7 5800X 3.8 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Placa Video </td>
+                        <td>ASUS RX 6800 XT 16GB GDDR6</td>
+                    </tr>
+                    <tr>
+                        <td>Placa de baza </td>
+                        <td>AMD B550</td>
+                    </tr>
+                    <tr>
+                        <td>Memorie Ram</td>
+                        <td>32GB DDR4</td>
+                    </tr>
+                    <tr>
+                        <td>Memorie Stocare</td>
+                        <td>2 TB</td>
+                    </tr>
+                    <tr>
+                        <td>SURSA</td>
+                        <td>850 WATT 80+ GOLD</td>
+                    </tr>
+                    <tr>
+                        <td>CARCASA</td>
+                        <td>GAMEMAX MIDDLE TOWER</td>
+                    </tr>
+                </table>
+                <button class="cumpara-btn">CUMPARA</button>
+            </div>  
+            <div class="specification-pc-footer">
+                <div class="footer-button-border">
+                    <button class="specification-pc-footer-button">DESPRE</button>
+                </div>
+                <button class="specification-pc-footer-button" onclick="location.href='/Pages/6contact-pc/contact-pc.html'">CONTACT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

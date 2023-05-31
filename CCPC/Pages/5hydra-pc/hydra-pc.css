@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+:root {
+  --titleWidth: 335px;
+  --titleSize: 10rem;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hydra-pc-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hydra-pc-page-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  background-color: #1b96f3;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.hydra-page-title {
+  width: var(--titleWidth);
+  margin-left: 20px;
+  font-family: "Road Rage", cursive;
+  font-weight: bold;
+  font-size: clamp(6rem, 30vw, 10rem);
+  color: tomato;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-decoration: none;
+}
+
+.hydra-page-title:hover {
+  color: white;
+  transition: 0.7s ease-in-out;
+}
+
+.hydra-pc-menu {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hydra-pc-menu > button {
+  border: 2px solid black;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 40px;
+  font-family: "Road Rage", cursive;
+  background-color: turquoise;
+  border-radius: 10px;
+}
+
+.hydra-pc-menu button.active {
+  background-color: tomato;
+}
+
+.hydra-pc-menu > button:hover,
+.hydra-pc-menu > button:focus {
+  color: white;
+  background-color: tomato;
+}
+.slider {
+  width: 800px;
+  height: 800px;
+  border-radius: 10px;
+  background-size: contain;
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 800px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 800px;
+  height: 800px;
+}
+.nav-man {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.man-btn {
+  border: 2px solid #1b96f3;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.man-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.man-btn:hover {
+  background-color: tomato;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+.nav-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 760px;
+}
+.nav-auto div {
+  border: 2px solid #1b96f3;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.nav-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+  background-color: #1b96f3;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+  background-color: #1b96f3;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3 {
+  background-color: #1b96f3;
+}
+
+.hydra-mai-mult {
+  overflow: hidden;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Brush Script MT", cursive;
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  overflow-wrap: break-word;
+}
+
+.pret {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #1b96f3;
+  color: white;
+  font-size: 3rem;
+  font-family: "Georgia", "serif";
+}
+.pret:hover {
+  color: tomato;
+}
+.cumpara-btn {
+  width: 20%;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: #1b96f3;
+  font-family: "Georgia", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cumpara-btn:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+#model-pc td,
+#model-pc th {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.hydra-pc-footer {
+  margin-bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+
+.hydra-pc-footer-button {
+  border: 2px solid black;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 25px;
+  font-family: "Road Rage", cursive;
+  background-color: turquoise;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hydra-pc-footer-button:hover,
+.hydra-pc-footer-button:focus {
+  color: black;
+  background-color: white;
+}
+
+.footer-button-border {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  border-right: 3px solid black;
+}
+
+@media (max-width: 768px) {
+  .hydra-page-title {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 6rem;
+  }
+
+  .hydra-pc-menu {
+    margin: 0 120px 0 auto;
+  }
+
+  .hydra-pc-menu > button {
+    font-size: 25px;
+    margin-left: 10px;
+    gap: 25px;
+  }
+  .hydra-mai-mult {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hydra-mai-mult > .cumpara-btn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .hydra-pc-page-header {
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hydra-pc-menu {
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .hydra-page-title {
+    width: auto;
+    margin: 0;
+    font-size: 6rem;
+  }
+
+  .hydra-pc-menu > button {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .slider > .slides {
+    display: none;
+  }
+  .slider {
+    background-image: url("/images/41png.png");
+    width: 200px;
+    height: 200px;
+  }
+
+  .pret {
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .hydra-mai-mult {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .cumpara-btn {
+    width: min(45vw, 100px);
+  }
+}
